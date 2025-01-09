@@ -59,10 +59,14 @@ function App() {
         <div className="contenedor_listas">
             <ListaTarea
                 listaTareas={listaTareas}
-                completadas={false}/>
+                completadas={false}
+                eliminar={handleEliminarClick}
+                completar={handleCompletarChange}/>
             <ListaTarea
                 listaTareas={listaTareas}
-                completadas={true}/>
+                completadas={true}
+                eliminar={handleEliminarClick}
+                completar={handleCompletarChange}/>
         </div>
     </>
   )
